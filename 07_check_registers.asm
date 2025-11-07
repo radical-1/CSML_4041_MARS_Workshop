@@ -1,6 +1,6 @@
 .data
 	numbers: .word 50, 12
-
+	result : .space 4
 
 .text
 
@@ -23,6 +23,11 @@ loop:
 	
 	bnez $s2, loop
 	
+	
+	add $s3, $s0, $s1
+	
+	la $t0, result
+	sw $s3, 0($t0)
 	
 	li $v0, 1
 	move $a0, $s0

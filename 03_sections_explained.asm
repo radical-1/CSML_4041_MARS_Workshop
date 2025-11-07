@@ -12,6 +12,7 @@
     double_var: .double 2.71828 # Double precision float
     
     string_var: .asciiz "This is a string\n"  # Null-terminated string
+    string_var2: .ascii "This is a string without null terminator"  # Non-null-terminated string
     array: .word 1, 2, 3, 4, 5  # Array of 5 words
     
     # Reserve space without initialization
